@@ -1,0 +1,276 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Barlow|Tomorrow:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+@font-face{
+    font-family:'FonteLogo';
+    src:url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+body{
+    font-family:Arial,"sans-serif";
+    background-color:#87CEEB;
+}
+
+div#interface{
+    width:985px;
+    margin:-10px auto 0px auto;
+    background-color:white;
+    box-shadow:0px 0px 10px black;
+    padding:25px 10px 10px 10px;
+}
+
+p{
+    text-indent: 40px;
+    text-align:justify;
+    font-size:13pt;
+}
+
+h1{
+    text-align:center;
+    font-family: Arial;
+    font-size:25pt;
+    color:rgba(0,0,0,0.9) ;
+    text-shadow:1px 1px 1px gray;
+}
+
+h2{
+    font-family: Arial;
+    font-size:15pt;
+    color:black;
+    text-shadow:1px 1px 1px gray;
+}
+.test{
+    background-color:white;
+    text-indent: 40px;
+    text-align:justify;
+}
+
+h2#gs{
+    margin-top:-15px;
+}
+
+header#cabecalho img#python{
+    position:relative;
+    left:890px;
+    top:-28px;
+    width:12%;
+}
+
+header#cabecalho{
+    border-bottom:1px #606060 solid;
+    height:150px;
+    background:url("../pics/glass-logo-peq.jpg") no-repeat 0px 100px;
+}
+
+header#cabecalho h1{
+    font-family:FonteLogo, sans-serif;
+    font-size:30pt;
+    color:#606060;
+    text-align:left;
+    text-shadow:1.5px 1px 1px rgba(0,0,0,.6);
+    margin-bottom:0px;
+}
+
+header#cabecalho h2{
+    font-family:Tomorrow, sans-serif;
+    font-size:15pt;
+    color:#888888;
+    margin-top:0px;
+}
+
+header#cabecalho-artigo h1 {
+	font-family: 'FonteLogo', sans-serif;
+	color: #606060;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	text-align:left;
+}
+
+header#cabecalho-artigo h2 {
+	font-size: 13pt;
+	color:#C0C0C0;
+	background-color: #ffffff;
+	margin: 0px;
+}
+
+.direita {
+	text-align: right;
+}
+
+header#cabecalho-artigo h3 {
+	font-size: 12px;
+	color: #606060;
+}
+
+/* Formatação de imagens com legendas*/
+
+
+figure.foto-legenda{
+    position: relative;
+    border: 4px solid lightblue;
+    width: 300px;
+    box-shadow:1px 1px 10px black;
+
+}
+figure.foto-legenda img{
+    width:100%;
+    height:100%;
+}
+
+figure.foto-legenda figcaption{
+    opacity:0;
+    position: absolute;
+    top: 0px;
+    background-color:rgba(0,0,0,0.4);
+    color:white;
+    width:100%;
+    height:100%;
+    padding:10px;
+    box-sizing:border-box;
+    transition:opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption{
+    opacity:1;
+}
+
+/* Formatação do menu */
+
+nav#menu{
+    display: block;
+}
+
+nav#menu ul{
+    list-style:none;
+    text-transform:uppercase;
+    position:absolute;
+	top: -26px;
+	left:460px;
+
+}
+
+nav#menu li{
+    display: inline-block;
+    background-color: #6CE6CD;
+    padding:10px;
+    margin:10px;
+    transition:background-color 0.5s;
+    box-shadow:0.5px 0.5px 0.5px 0px;
+
+}
+
+nav#menu h1{
+    display:none;
+}
+
+nav#menu li:hover{
+    background-color:#1C1C1C;
+}
+nav#menu a{
+    color:black;
+    text-decoration:none;
+}
+nav#menu a:hover{
+    color:white;
+}
+
+/* Configurção da section*/
+
+section#corpo{
+    display:block;
+    width:520px;
+    float:left;
+    border-right:1px solid #606060;
+    padding-right:25px;
+
+}
+article#primeira_notic h2:hover{
+    color:#1C1C1C;
+}
+
+article#segund_notic h2:hover{
+    color:#1C1C1C;
+}
+article#primeira_notic h3{
+    font-size:6pt;
+    text-align:right;
+    font-family:Tomorrow;
+}
+
+
+aside#lateral{
+    display:block;
+    width:400px;
+    /*background-color:lightgrey;*/
+    float:right;
+    background-color:#DCDCDC;
+    border:1px lightgrey solid;
+    box-shadow:0px 0.5px 0.5px 0.5px;
+
+}
+
+footer#rodape{
+    border-top:1px solid #606060;
+    clear:both;
+
+}
+
+footer p{
+    text-align:center;
+    font-family:verdana;
+    color:black;
+    font-size:8pt;
+    font-family:Tomorrow;
+}
+
+footer#rodape a{
+    text-decoration:none;
+    color:black;
+
+
+}
+footer#rodape a:hover{
+    text-decoration:underline;
+}
+
+/*  Formatação da tabela */
+
+table#manga{
+    font-family:Faustina;
+    font-size:13pt;
+    border:1px solid black ;
+    border-spacing:0px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+table#manga td{
+    border:1px black solid;
+    padding:10px;
+}
+
+.ce{
+    background-color:#6495ED;
+    text-align:center;
+    font-weight:bold;
+
+}
+
+.cd{
+    background-color:#87CEEB;
+    text-align:center;
+    vertical-align:bottom;
+
+}
+
+tr#king td#marca:hover{
+    color:#FFD700;
+
+}
+
+table#manga caption{
+    font-size:14pt;
+    font-weight:bolder;
+
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>noticias de anime</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="_css/notic_destaque.css">
+</head>
+<script language="JavaScript" src="javascript/funcoes.js"></script>
+<body>
+<div id="interface">
+
+    <header id="cabecalho"> <!--cabeçalho da pagina-->
+    <hgroup>
+    <h1>Noticias de destaque</h1>
+    <h2>Principais noticias do mundo dos animes></h2>
+    <h3></h3>
+    </hgroup>
+
+    <img id="python" src="pics/oculos.png">
+    <nav id="menu">
+    <h1>Menu principal</h1>
+    <ul>
+        <li onmouseover="mudaFoto('pics/home.png')" onmouseout="mudaFoto('pics/fotos.png')" ><a href="Meu site.html">Home</a></li>
+        <li onmouseover="mudaFoto('pics/especificacoes.png')" onmouseout="mudaFoto('pics/fotos.png')"><a href ="fotos.html">Fotos</a></li>
+        <li onmouseover="mudaFoto('pics/multimidia.png')" onmouseout="mudaFoto('pics/fotos.png')"><a href="Multimidia.html">Mídia</a></li>
+        <li onmouseover="mudaFoto('pics/fotos.png')" onmouseout="mudaFoto('pics/fotos.png')"><a href ="notic_destaque.html">Notícia destaque</a></li>
+        <li onmouseover="mudaFoto('pics/contato.png')" onmouseout="mudaFoto('pics/fotos.png')"><a href ="fale-conosco.html">Fale conosco</a></li>
+    </ul>
+    </nav>
+    </header>
+<section id="corpo-full">
+    <article id="primeira_notic">
+        <header id="cabecalho-artigo">
+            <hgroup>
+                <h1>Top animes</h1>
+                <h2>Raio-x por por vinidiniz</h2>
+                <h3 class="direita">Atualizado 13/08/2020</h3>
+            </hgroup>
+         </header>
+
+    <p>Clique nas areas nas coroas para ter mais informações sobre os top mangas em vendas</p>
+    </article>
+<section id="conteudo">
+    <img src="pics/podio.jpg" usemap="#meumapa"/>
+    <map name="meumapa">
+        <area shape="rect" coords="179,4,262,71" href="destaque.html#one" target="janela"/><!--Primeiro lugar em diante-->
+        <area shape="rect" coords="100,73,166,132" href="destaque.html#dragon" target="janela">
+        <area shape="rect" coords="280,72,346,131" href="destaque.html#golgo" target="janela">
+        <area shape="rect" coords="15,138,82,195" href="destaque.html#naruto" target="janela">
+        <area shape="rect" coords="367,137,435,195" href="destaque.html#detetive" target="janela">
+    </map>
+    <iframe src="destaque.html" name="janela" id="frame-spec" scrolling="no"></iframe>
+</section>
+</section>
+<footer id="rodape">
+<p id="copy"><br>Feito por<a href="https://twitter.com/Vinidiniz17?s=08" target="_blank">@vinidiniz17</a></p>
+</footer>
+
+</div>
+</body>
+</html>
